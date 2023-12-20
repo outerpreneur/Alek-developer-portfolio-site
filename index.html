@@ -33,7 +33,9 @@
 
     <title>Alek Tysklind developer</title>
   </head>
-  <body class="bg-white dark:bg-midnight dark:text-white font-spacegrotesk">
+  <body
+    class="bg-white dark:bg-midnight dark:text-white font-spacegrotesk relative"
+  >
     <header
       class="fixed w-full flex justify-center items-center bg-white dark:bg-midnight"
     >
@@ -95,22 +97,23 @@
             <li
               class="underline decoration-metalgreen underline-offset-8 decoration-2 cursor-pointer hover:font-bold hover:decoration-4 hover:animate-pulse"
             >
-              Skills
+              <a href="#skills">Skills</a>
             </li>
             <li
               class="underline decoration-metalgreen underline-offset-8 decoration-2 cursor-pointer hover:font-bold hover:decoration-4 hover:animate-pulse"
             >
-              Projects
+              <a href="#projects">Projects</a>
             </li>
             <li
               class="underline decoration-metalgreen underline-offset-8 decoration-2 cursor-pointer hover:font-bold hover:decoration-4 hover:animate-pulse"
             >
-              Contact
+              <a href="#contact">Contact</a>
             </li>
           </ul>
         </nav>
+
         <svg
-          id="mobile-menu"
+          id="mobile-menu-icon"
           class="sm:hidden text-midnight dark:text-white cursor-pointer"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 50 50"
@@ -1771,7 +1774,46 @@
         </div>
       </div>
     </footer>
+    <dialog
+      id="mobile-menu"
+      class="bg-white dark:bg-midnight text-black dark:text-white z-10 h-[200px] w-[90%] top-10"
+    >
+      <div class="flex justify-center items-center h-full">
+        <ul class="flex gap-8 items-center text-lg flex-col">
+          <li
+            class="underline decoration-metalgreen underline-offset-8 decoration-2 cursor-pointer hover:font-bold hover:decoration-4 hover:animate-pulse"
+          >
+            <a href="#skills">Skills</a>
+          </li>
+          <li
+            class="underline decoration-metalgreen underline-offset-8 decoration-2 cursor-pointer hover:font-bold hover:decoration-4 hover:animate-pulse"
+          >
+            <a href="#projects">Projects</a>
+          </li>
+          <li
+            class="underline decoration-metalgreen underline-offset-8 decoration-2 cursor-pointer hover:font-bold hover:decoration-4 hover:animate-pulse"
+          >
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+        <svg
+          id="close-button"
+          class="absolute top-2 right-2 text-black dark:text-white"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 50 50"
+          width="25px"
+          height="25px"
+        >
+          <path
+            fill="currentColor"
+            d="M 7.71875 6.28125 L 6.28125 7.71875 L 23.5625 25 L 6.28125 42.28125 L 7.71875 43.71875 L 25 26.4375 L 42.28125 43.71875 L 43.71875 42.28125 L 26.4375 25 L 43.71875 7.71875 L 42.28125 6.28125 L 25 23.5625 Z"
+          />
+        </svg>
+      </div>
+    </dialog>
   </body>
   <script src="index.js"></script>
+  <script src="form.js"></script>
   <script src="dark.js"></script>
+  <script src="scroll.js"></script>
 </html>
