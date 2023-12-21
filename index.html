@@ -41,7 +41,7 @@
     >
       <div
         id="inner-header"
-        class="flex max-w-xs py-5 align-middle items-center justify-between sm:py-5 gap-6 flex-row w-full md:max-w-7xl"
+        class="flex max-w-xs py-5 align-middle items-center justify-between sm:py-5 gap-6 flex-row w-full sm:max-w-xl xl:max-w-7xl"
       >
         <h2 class="text-center font-space-grotesk font-bold text-sm md:text-lg">
           { alektysklind.dev }
@@ -92,7 +92,7 @@
             />
           </svg>
         </div>
-        <nav id="desktop-menu" class="hidden sm:block">
+        <nav id="desktop-menu" class="hidden lg:block">
           <ul class="flex gap-8 items-center text-lg">
             <li
               class="underline decoration-metalgreen underline-offset-8 decoration-2 cursor-pointer hover:font-bold hover:decoration-4 hover:animate-pulse"
@@ -119,7 +119,7 @@
 
         <svg
           id="mobile-menu-icon"
-          class="sm:hidden text-midnight dark:text-white cursor-pointer"
+          class="lg:hidden text-midnight dark:text-white cursor-pointer"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 50 50"
           width="25px"
@@ -136,17 +136,17 @@
       id="intro"
       class="h-screen bg-ringspatternBlack dark:bg-ringspattern bg-no-repeat bg-center md:bg-left flex justify-center items-center"
     >
-      <div id="inner-intro" class="max-w-xs md:max-w-7xl">
+      <div id="inner-intro" class="max-w-xs sm:max-w-xl xl:max-w-7xl">
         <div
           id="structure-intro"
-          class="mt-10 flex flex-col justify-center gap-5 sm:gap-3 pb-10 sm:flex-row-reverse sm:justify-between"
+          class="mt-10 flex flex-col justify-center gap-5 sm:gap-3 pb-10 xl:flex-row-reverse sm:justify-between"
         >
           <img
-            class="m-auto sm:hidden rounded-xl"
+            class="m-auto lg:hidden rounded-xl"
             src="./assets/images/image-profile-mobile.JPG"
           />
           <img
-            class="w-1/3 hidden sm:block"
+            class="w-1/3 hidden lg:block"
             src="./assets/images/image-profile-desktop.JPG"
           />
           <div
@@ -246,7 +246,10 @@
       id="skills"
       class="w-full mb-32 bg-no-repeat bg-right bg-ringspatternBlack dark:bg-ringspattern flex justify-center"
     >
-      <div id="inner-skills" class="max-w-xs sm:max-w-7xl w-full">
+      <div
+        id="inner-skills"
+        class="max-w-xs sm:max-w-7xl w-full sm:max-w-xl xl:max-w-7xl"
+      >
         <hr />
         <div
           class="py-14 grid grid-cols-2 lg:grid-cols-3 justify-center text-center gap-20"
@@ -1558,7 +1561,7 @@
     <section id="projects" class="flex justify-center">
       <div
         id="inner-projects"
-        class="max-w-xs md:max-w-7xl flex flex-col justify-center align-middle py-6"
+        class="max-w-xs flex flex-col justify-center align-middle py-6 sm:max-w-xl xl:max-w-7xl"
       >
         <div class="flex justify-between pt-8 pb-8">
           <h2 class="text-2xl sm:text-5xl">Projects</h2>
