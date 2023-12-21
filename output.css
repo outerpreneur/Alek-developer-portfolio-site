@@ -751,6 +751,10 @@ video {
   margin-bottom: 8rem;
 }
 
+.mt-20 {
+  margin-top: 5rem;
+}
+
 .box-border {
   box-sizing: border-box;
 }
@@ -1964,6 +1968,10 @@ video {
   background-image: url('./assets/images/pattern-rings-black.svg');
 }
 
+.bg-ringspattern {
+  background-image: url('./assets/images/pattern-rings.svg');
+}
+
 .decoration-slice {
   -webkit-box-decoration-break: slice;
           box-decoration-break: slice;
@@ -2837,6 +2845,10 @@ video {
 
 :is(.dark .dark\:bg-ringspattern) {
   background-image: url('./assets/images/pattern-rings.svg');
+}
+
+:is(.dark .dark\:bg-ringspatternBlack) {
+  background-image: url('./assets/images/pattern-rings-black.svg');
 }
 
 :is(.dark .dark\:text-white) {

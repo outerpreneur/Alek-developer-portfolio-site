@@ -163,7 +163,7 @@
               >.
             </h1>
 
-            <h3 class="text-sm mt-6 md:max-w-lg">
+            <h3 class="text-sm md:text-lg mt-6 md:max-w-lg">
               Based in Switzerland, I'm a front-end developer passionate about
               building accessible shopify stores & web apps that shoppers love.
             </h3>
@@ -1691,42 +1691,56 @@
 
     <section
       id="contact"
-      class="bg-gray-100 dark:bg-footerbg flex justify-center py-20"
+      class="mt-20 bg-gray-100 dark:bg-footerbg flex justify-center py-20 bg-ringspatternBlack dark:bg-ringspattern bg-no-repeat bg-center md:bg-left"
     >
       <div
         id="contact-inner"
-        class="max-w-xs bg-gray-100 w-full grid grid-cols-1 dark:bg-footerbg gap-5 m-auto sm:max-w-xl md:max-w-7xl lg:grid-cols-2"
+        class="max-w-xs w-full grid grid-cols-1 gap-5 m-auto sm:max-w-xl md:max-w-7xl lg:grid-cols-2"
       >
         <div class="text-center md:text-left">
           <h1 class="text-2xl my-4 md:text-5xl">Contact</h1>
-          <p class="text-sm md:max-w-md">
+          <p class="text-sm md:text-lg md:max-w-md">
             I would love to hear about your project and how I could help. Please
             fill in the form, and I’ll get back to you as soon as possible.
           </p>
         </div>
 
-        <form class="flex flex-col gap-4">
+        <form
+          class="flex flex-col gap-4"
+          action="process_form.php"
+          method="post"
+        >
           <label for="name" class="hidden">Name</label>
           <input
             id="name"
+            name="name"
             placeholder="NAME"
             class="py-2 border-b border-black dark:border-white dark:bg-footerbg placeholder:text-black bg-gray-100 dark:placeholder:text-metalgray placeholder:pl-2 text-sm uppercase"
+            required
           />
+
           <label for="email" class="hidden">Email</label>
           <input
             id="email"
+            name="email"
+            type="email"
             placeholder="EMAIL"
             class="py-2 border-b border-black dark:border-white placeholder:text-black bg-gray-100 dark:placeholder:text-metalgray dark:bg-footerbg placeholder:pl-2 text-sm uppercase"
+            required
           />
+
           <p class="error-message hidden text-right text-red-500 mt-0 text-sm">
             Sorry, invalid format here
           </p>
+
           <label for="message" class="hidden">Message</label>
-          <input
+          <textarea
             id="message"
+            name="message"
             placeholder="MESSAGE"
             class="py-2 border-b border-black dark:border-white bg-gray-100 dark:bg-footerbg placeholder:pl-2 text-sm placeholder:text-black dark:placeholder:text-metalgray h-[100px] uppercase"
-          />
+            required
+          ></textarea>
 
           <button
             type="submit"
