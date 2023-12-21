@@ -16,30 +16,49 @@ function validate(emailInput) {
 }
 
 submitButton.addEventListener("click", (event) => {
-  event.preventDefault();
-  inputs.forEach((input) => {
-    if (!input.value) {
-      input.classList.add("border-red-500");
-    } else {
-      input.classList.add("border-green-500");
-    }
-  });
   if (validate(emailInput.value)) {
-    console.log("worka");
     emailInput.classList.add("border-green-500");
     errorMessage.classList.add("hidden");
   } else {
+    event.preventDefault();
+    inputs.forEach((input) => {
+      if (!input.value) {
+        input.classList.add("border-red-500");
+      } else {
+        input.classList.add("border-green-500");
+      }
+    });
     errorMessage.classList.remove("hidden");
     emailInput.classList.add("border-red-500");
   }
 });
 
-inputs.forEach((input) => {
-  input.addEventListener("keyup", (event) => {
-    if (input.value.length < 1) {
-      input.classList.add("border-red-500");
-    } else {
-      input.classList.remove("border-red-500");
-    }
-  });
+nameInput.addEventListener("keyup", (event) => {
+  if (nameInput.value.length < 1) {
+    nameInput.classList.add("border-red-500");
+    messageInput.classList.remove("border-green-500");
+  } else {
+    nameInput.classList.add("border-green-500");
+    messageInput.classList.remove("border-red-500");
+  }
+});
+
+emailInput.addEventListener("keyup", (event) => {
+  if (emailInput.value.length < 1) {
+    emailInput.classList.add("border-red-500");
+    messageInput.classList.remove("border-green-500");
+  } else {
+    emailInput.classList.add("border-green-500");
+    messageInput.classList.add("border-red-500");
+  }
+});
+
+messageInput.addEventListener("keyup", (event) => {
+  if (messageInput.value.length < 1) {
+    messageInput.classList.add("border-red-500");
+    messageInput.classList.remove("border-green-500");
+  } else {
+    messageInput.classList.remove("border-red-500");
+    messageInput.classList.add("border-green-500");
+  }
 });

@@ -755,6 +755,10 @@ video {
   margin-top: 5rem;
 }
 
+.ml-2 {
+  margin-left: 0.5rem;
+}
+
 .box-border {
   box-sizing: border-box;
 }
@@ -972,6 +976,32 @@ video {
 
 .transform-none {
   transform: none;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(-25%);
+    animation-timing-function: cubic-bezier(0.8,0,1,1);
+  }
+
+  50% {
+    transform: none;
+    animation-timing-function: cubic-bezier(0,0,0.2,1);
+  }
+}
+
+.animate-bounce {
+  animation: bounce 1s infinite;
+}
+
+@keyframes pulse {
+  50% {
+    opacity: .5;
+  }
+}
+
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
 .cursor-pointer {
@@ -2094,6 +2124,14 @@ video {
   padding: 1rem;
 }
 
+.p-1 {
+  padding: 0.25rem;
+}
+
+.p-2 {
+  padding: 0.5rem;
+}
+
 .px-6 {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
@@ -2759,6 +2797,54 @@ video {
   }
 }
 
+.placeholder\:-inset-2::-moz-placeholder {
+  inset: -0.5rem;
+}
+
+.placeholder\:-inset-2::placeholder {
+  inset: -0.5rem;
+}
+
+.placeholder\:ml-2::-moz-placeholder {
+  margin-left: 0.5rem;
+}
+
+.placeholder\:ml-2::placeholder {
+  margin-left: 0.5rem;
+}
+
+.placeholder\:ml-0::-moz-placeholder {
+  margin-left: 0px;
+}
+
+.placeholder\:ml-0::placeholder {
+  margin-left: 0px;
+}
+
+.placeholder\:-ml-2::-moz-placeholder {
+  margin-left: -0.5rem;
+}
+
+.placeholder\:-ml-2::placeholder {
+  margin-left: -0.5rem;
+}
+
+.placeholder\:-ml-4::-moz-placeholder {
+  margin-left: -1rem;
+}
+
+.placeholder\:-ml-4::placeholder {
+  margin-left: -1rem;
+}
+
+.placeholder\:-ml-6::-moz-placeholder {
+  margin-left: -1.5rem;
+}
+
+.placeholder\:-ml-6::placeholder {
+  margin-left: -1.5rem;
+}
+
 .placeholder\:pl-2::-moz-placeholder {
   padding-left: 0.5rem;
 }
@@ -2775,6 +2861,16 @@ video {
 .placeholder\:text-black::placeholder {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.placeholder\:text-red-500::-moz-placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(239 68 68 / var(--tw-text-opacity));
+}
+
+.placeholder\:text-red-500::placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(239 68 68 / var(--tw-text-opacity));
 }
 
 @keyframes pulse {
