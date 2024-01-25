@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" id="bodytag">
   <head>
     <meta charset="UTF-8" />
@@ -34,22 +34,22 @@
     <title>Alek Tysklind developer</title>
   </head>
   <body
-    class="bg-white dark:bg-midnight dark:text-white font-spacegrotesk relative"
+    class="relative bg-white font-spacegrotesk dark:bg-midnight dark:text-white"
   >
     <header
-      class="fixed w-full flex justify-center items-center bg-white dark:bg-midnight transition-opacity duration-1000 ease-in-out"
+      class="fixed flex w-full items-center justify-center bg-white transition-opacity duration-1000 ease-in-out dark:bg-midnight"
     >
       <div
         id="inner-header"
-        class="flex max-w-xs py-5 align-middle items-center justify-between sm:py-5 gap-6 flex-row w-full sm:max-w-xl xl:max-w-7xl"
+        class="flex w-full max-w-xs flex-row items-center justify-between gap-6 py-5 align-middle sm:max-w-xl sm:py-5 xl:max-w-7xl"
       >
-        <h2 class="text-center font-space-grotesk font-bold text-sm md:text-lg">
+        <h2 class="font-space-grotesk text-center text-sm font-bold md:text-lg">
           { alektysklind.dev }
         </h2>
-        <div id="toggle-block" class="flex gap-2 items-center">
+        <div id="toggle-block" class="flex items-center gap-2">
           <svg
             id="light-icon"
-            class="sm:block text-black dark:text-white cursor-pointer"
+            class="cursor-pointer text-black dark:text-white sm:block"
             xmlns="http://www.w3.org/2000/svg"
             width="24"
             height="24"
@@ -64,22 +64,22 @@
 
           <div
             id="toggle"
-            class="relative inline-block w-10 align-middle select-none transition duration-200 ease-in"
+            class="relative inline-block w-10 select-none align-middle transition duration-200 ease-in"
           >
             <input
               type="checkbox"
               name="toggle"
               id="toggle-input"
-              class="toggle-checkbox absolute block w-6 h-6 rounded-full bg-black dark:bg-black border-4 appearance-none cursor-pointer"
+              class="toggle-checkbox absolute block h-6 w-6 cursor-pointer appearance-none rounded-full border-4 bg-black dark:bg-black"
             />
             <label
               for="toggle"
-              class="toggle-label block overflow-hidden h-6 rounded-full bg-black dark:bg-white cursor-pointer"
+              class="toggle-label block h-6 cursor-pointer overflow-hidden rounded-full bg-black dark:bg-white"
             ></label>
           </div>
           <svg
             id="dark-icon"
-            class="sm:block text-black dark:text-white cursor-pointer"
+            class="cursor-pointer text-black dark:text-white sm:block"
             xmlns="http://www.w3.org/2000/svg"
             width="24"
             height="24"
@@ -93,24 +93,24 @@
           </svg>
         </div>
         <nav id="desktop-menu" class="hidden lg:block">
-          <ul class="flex gap-8 items-center text-lg">
+          <ul class="flex items-center gap-8 text-lg">
             <li
-              class="underline decoration-metalgreen underline-offset-8 decoration-2 cursor-pointer hover:font-bold hover:decoration-4 hover:animate-pulse"
+              class="cursor-pointer underline decoration-metalgreen decoration-2 underline-offset-8 hover:animate-pulse hover:font-bold hover:decoration-4"
             >
               <a href="#intro">Intro</a>
             </li>
             <li
-              class="underline decoration-metalgreen underline-offset-8 decoration-2 cursor-pointer hover:font-bold hover:decoration-4 hover:animate-pulse"
+              class="cursor-pointer underline decoration-metalgreen decoration-2 underline-offset-8 hover:animate-pulse hover:font-bold hover:decoration-4"
             >
               <a href="#skills">Skills</a>
             </li>
             <li
-              class="underline decoration-metalgreen underline-offset-8 decoration-2 cursor-pointer hover:font-bold hover:decoration-4 hover:animate-pulse"
+              class="cursor-pointer underline decoration-metalgreen decoration-2 underline-offset-8 hover:animate-pulse hover:font-bold hover:decoration-4"
             >
               <a href="#projects">Projects</a>
             </li>
             <li
-              class="underline decoration-metalgreen underline-offset-8 decoration-2 cursor-pointer hover:font-bold hover:decoration-4 hover:animate-pulse"
+              class="cursor-pointer underline decoration-metalgreen decoration-2 underline-offset-8 hover:animate-pulse hover:font-bold hover:decoration-4"
             >
               <a href="#contact">Contact</a>
             </li>
@@ -119,7 +119,7 @@
 
         <svg
           id="mobile-menu-icon"
-          class="lg:hidden text-midnight dark:text-white cursor-pointer"
+          class="cursor-pointer text-midnight dark:text-white lg:hidden"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 50 50"
           width="25px"
@@ -134,26 +134,26 @@
     </header>
     <section
       id="intro"
-      class="h-screen bg-ringspatternBlack dark:bg-ringspattern bg-no-repeat bg-center md:bg-left flex justify-center items-center"
+      class="flex h-screen items-center justify-center bg-ringspatternBlack bg-center bg-no-repeat dark:bg-ringspattern md:bg-left"
     >
       <div id="inner-intro" class="max-w-xs sm:max-w-xl xl:max-w-7xl">
         <div
           id="structure-intro"
-          class="mt-10 flex flex-col justify-center gap-5 sm:gap-3 pb-10 xl:flex-row-reverse sm:justify-between"
+          class="mt-10 flex flex-col justify-center gap-5 pb-10 sm:justify-between sm:gap-3 xl:flex-row-reverse"
         >
           <img
-            class="m-auto lg:hidden rounded-xl"
+            class="m-auto rounded-xl lg:hidden"
             src="./assets/images/image-profile-mobile.JPG"
           />
           <img
-            class="w-1/3 hidden lg:block"
+            class="hidden w-1/3 lg:block"
             src="./assets/images/image-profile-desktop.JPG"
           />
           <div
-            class="text-center flex flex-col gap-3 sm:gap-10 sm:text-left sm:justify-center"
+            class="flex flex-col gap-3 text-center sm:justify-center sm:gap-10 sm:text-left"
           >
             <h1
-              class="text-3xl font-bold leading-8 font-space-grotesk md:text-7xl"
+              class="font-space-grotesk text-3xl font-bold leading-8 md:text-7xl"
             >
               Nice to meet you!<br />
               I'm
@@ -162,17 +162,17 @@
                 >Alek Tysklind</span
               >.
             </h1>
-            <h2 class="text-sm md:text-lg mt-6 md:max-w-lg uppercase">
+            <h2 class="mt-6 text-sm uppercase md:max-w-lg md:text-lg">
               front-end Developer, eCommerce Expert and Entrepreneur
             </h2>
 
-            <h3 class="text-sm md:text-lg mt-6 md:max-w-lg">
+            <h3 class="mt-6 text-sm md:max-w-lg md:text-lg">
               Based in Switzerland, I'm a front-end developer passionate about
               building accessible shopify stores & web apps that shoppers love.
             </h3>
 
             <button
-              class="uppercase my-auto md:my-0 underline pt-3 pb-8 decoration-metalgreen decoration-4 underline-offset-[15px] sm:w-1/4 md:pl-0 sm:text-left hover:text-metalgreen"
+              class="my-auto pb-8 pt-3 uppercase underline decoration-metalgreen decoration-4 underline-offset-[15px] hover:text-metalgreen sm:w-1/4 sm:text-left md:my-0 md:pl-0"
             >
               <a href="#contact">Contact me</a>
             </button>
@@ -181,11 +181,11 @@
       </div>
       <div
         id="sticky-social"
-        class="flex sm:h-24 md:flex-col sm:m-0 gap-4 align-middle fixed md:left-0 bottom-0 sm:top-1/2 sm:transform justify-center sm:-translate-y-1/2 p-4 bg-white dark:bg-midnight transition-opacity duration-500 ease-linear"
+        class="fixed bottom-0 flex justify-center gap-4 bg-white p-4 align-middle transition-opacity duration-500 ease-linear dark:bg-midnight sm:top-1/2 sm:m-0 sm:h-24 sm:-translate-y-1/2 sm:transform md:left-0 md:flex-col"
       >
         <a href="https://github.com/outerpreneur" target="_blank">
           <svg
-            class="text-black dark:text-white cursor-pointer hover:text-metalgreen dark:hover:text-metalgreen"
+            class="cursor-pointer text-black hover:text-metalgreen dark:text-white dark:hover:text-metalgreen"
             xmlns="http://www.w3.org/2000/svg"
             width="25"
             height="24"
@@ -202,7 +202,7 @@
           target="_blank"
         >
           <svg
-            class="text-black dark:text-white cursor-pointer hover:text-metalgreen dark:hover:text-metalgreen"
+            class="cursor-pointer text-black hover:text-metalgreen dark:text-white dark:hover:text-metalgreen"
             xmlns="http://www.w3.org/2000/svg"
             width="26"
             height="23"
@@ -218,7 +218,7 @@
           target="_blank"
         >
           <svg
-            class="text-black dark:text-white cursor-pointer hover:text-metalgreen dark:hover:text-metalgreen"
+            class="cursor-pointer text-black hover:text-metalgreen dark:text-white dark:hover:text-metalgreen"
             xmlns="http://www.w3.org/2000/svg"
             width="25"
             height="24"
@@ -232,7 +232,7 @@
         </a>
         <a href="https://twitter.com/outerpreneur1" target="_blank">
           <svg
-            class="text-black dark:text-white cursor-pointer hover:text-metalgreen dark:hover:text-metalgreen"
+            class="cursor-pointer text-black hover:text-metalgreen dark:text-white dark:hover:text-metalgreen"
             xmlns="http://www.w3.org/2000/svg"
             width="24"
             height="20"
@@ -247,15 +247,15 @@
     </section>
     <section
       id="skills"
-      class="w-full mb-32 bg-no-repeat bg-right bg-ringspatternBlack dark:bg-ringspattern flex justify-center"
+      class="mb-32 flex w-full justify-center bg-ringspatternBlack bg-right bg-no-repeat dark:bg-ringspattern"
     >
       <div
         id="inner-skills"
-        class="max-w-xs sm:max-w-7xl w-full sm:max-w-xl xl:max-w-7xl"
+        class="w-full max-w-xs sm:max-w-7xl sm:max-w-xl xl:max-w-7xl"
       >
         <hr />
         <div
-          class="py-14 grid grid-cols-2 lg:grid-cols-3 justify-center text-center gap-20"
+          class="grid grid-cols-2 justify-center gap-20 py-14 text-center lg:grid-cols-3"
         >
           <div class="flex flex-col items-center gap-2 dark:text-white">
             <svg
@@ -1564,32 +1564,32 @@
     <section id="projects" class="flex justify-center">
       <div
         id="inner-projects"
-        class="max-w-xs flex flex-col justify-center align-middle py-6 sm:max-w-xl xl:max-w-7xl"
+        class="flex max-w-xs flex-col justify-center py-6 align-middle sm:max-w-xl xl:max-w-7xl"
       >
-        <div class="flex justify-between pt-8 pb-8">
+        <div class="flex justify-between pb-8 pt-8">
           <h2 class="text-2xl sm:text-5xl">Recent Projects</h2>
           <button
-            class="uppercase text-md underline decoration-metalgreen decoration-2 underline-offset-[15px]"
+            class="text-md uppercase underline decoration-metalgreen decoration-2 underline-offset-[15px]"
           >
             <a href="#contact">Contact me</a>
           </button>
         </div>
-        <div class="grid grid-cols-1 sm:grid-cols-2 sm:gap-x-4 gap-y-16 m-auto">
+        <div class="m-auto grid grid-cols-1 gap-y-16 sm:grid-cols-2 sm:gap-x-4">
           <div class="project-1 text-lg uppercase">
             <img src="./assets/images/weathertech.jpg" />
-            <p class="text-sm sm:text-lg pt-4 pb-1">Weathertech Switzerland</p>
+            <p class="pb-1 pt-4 text-sm sm:text-lg">Weathertech Switzerland</p>
             <span class="mr-3 text-sm">Liquid</span
             ><span class="text-sm">CSS</span>
             <div class="py-4">
               <button
-                class="view-project mr-3 underline uppercase decoration-metalgreen decoration-2 underline-offset-[15px] hover:text-metalgreen"
+                class="view-project mr-3 uppercase underline decoration-metalgreen decoration-2 underline-offset-[15px] hover:text-metalgreen"
               >
                 <a href="https://weathertechch.com/" target="_blank">
                   View project
                 </a>
               </button>
               <button
-                class="view-code underline uppercase decoration-metalgreen decoration-2 underline-offset-[15px] hover:text-metalgreen"
+                class="view-code uppercase underline decoration-metalgreen decoration-2 underline-offset-[15px] hover:text-metalgreen"
               >
                 <a
                   href="https://github.com/outerpreneur/Weathertech-Empire-4.0"
@@ -1603,19 +1603,19 @@
 
           <div class="project-2 text-lg uppercase">
             <img src="./assets/images/Marilou.jpg" />
-            <p class="text-sm sm:text-lg pt-4 pb-1">Marilou Shop</p>
+            <p class="pb-1 pt-4 text-sm sm:text-lg">Marilou Shop</p>
             <span class="mr-3 text-sm">Liquid</span
             ><span class="text-sm">CSS</span>
             <div class="py-4">
               <button
-                class="view-project mr-3 underline uppercase decoration-metalgreen decoration-2 underline-offset-[15px] hover:text-metalgreen"
+                class="view-project mr-3 uppercase underline decoration-metalgreen decoration-2 underline-offset-[15px] hover:text-metalgreen"
               >
                 <a href="https://www.mariloushop.com/" target="_blank">
                   View project
                 </a>
               </button>
               <button
-                class="view-code underline uppercase decoration-metalgreen decoration-2 underline-offset-[15px] hover:text-metalgreen"
+                class="view-code uppercase underline decoration-metalgreen decoration-2 underline-offset-[15px] hover:text-metalgreen"
               >
                 <a
                   href="https://github.com/outerpreneur/MarilouShop-Symmetry-4.0"
@@ -1629,12 +1629,12 @@
 
           <div class="project-3 text-lg uppercase">
             <img src="./assets/images/August Berg.jpg" />
-            <p class="text-sm sm:text-lg pt-4 pb-1">August Berg</p>
+            <p class="pb-1 pt-4 text-sm sm:text-lg">August Berg</p>
             <span class="mr-3 text-sm">Liquid</span
             ><span class="text-sm">CSS</span>
             <div class="py-4">
               <button
-                class="view-project mr-3 underline uppercase decoration-metalgreen decoration-2 underline-offset-[15px] hover:text-metalgreen"
+                class="view-project mr-3 uppercase underline decoration-metalgreen decoration-2 underline-offset-[15px] hover:text-metalgreen"
               >
                 <a href="https://augustberg.com/" target="_blank">
                   View project
@@ -1642,7 +1642,7 @@
               </button>
 
               <button
-                class="view-code underline uppercase decoration-metalgreen decoration-2 underline-offset-[15px] hover:text-metalgreen"
+                class="view-code uppercase underline decoration-metalgreen decoration-2 underline-offset-[15px] hover:text-metalgreen"
               >
                 View code
               </button>
@@ -1651,20 +1651,20 @@
 
           <div class="project-4 text-lg uppercase">
             <img src="./assets/images/Beyond Frequencies.jpg" />
-            <p class="text-sm sm:text-lg pt-4 pb-1">Beyond Frequencies</p>
+            <p class="pb-1 pt-4 text-sm sm:text-lg">Beyond Frequencies</p>
             <span class="mr-3 text-sm">Liquid</span
             ><span class="mr-3 text-sm">CSS</span>
             <span class="text-sm">JAVASCRIPT</span>
             <div class="py-4">
               <button
-                class="view-project mr-3 underline uppercase decoration-metalgreen decoration-2 underline-offset-[15px] hover:text-metalgreen"
+                class="view-project mr-3 uppercase underline decoration-metalgreen decoration-2 underline-offset-[15px] hover:text-metalgreen"
               >
                 <a href="https://www.beyond-frequencies.com/" target="_blank">
                   View project
                 </a>
               </button>
               <button
-                class="view-code underline uppercase decoration-metalgreen decoration-2 underline-offset-[15px] hover:text-metalgreen"
+                class="view-code uppercase underline decoration-metalgreen decoration-2 underline-offset-[15px] hover:text-metalgreen"
               >
                 <a
                   href="https://github.com/outerpreneur/Beyond-frequencies-2022-1.1"
@@ -1678,13 +1678,13 @@
 
           <div class="project-5 text-lg uppercase">
             <img src="./assets/images/Superbra.jpg" />
-            <p class="text-sm sm:text-lg pt-4 pb-1">SuperBra</p>
+            <p class="pb-1 pt-4 text-sm sm:text-lg">SuperBra</p>
             <span class="mr-3 text-sm">Liquid</span
             ><span class="mr-3 text-sm">CSS</span>
             <span class="text-sm">JAVASCRIPT</span>
             <div class="py-4">
               <button
-                class="view-project mr-3 underline uppercase decoration-metalgreen decoration-2 underline-offset-[15px] hover:text-metalgreen"
+                class="view-project mr-3 uppercase underline decoration-metalgreen decoration-2 underline-offset-[15px] hover:text-metalgreen"
               >
                 <a href="https://www.superbra.nl" target="_blank">
                   View project
@@ -1701,13 +1701,13 @@
 
           <div class="project-6 text-lg uppercase">
             <img src="./assets/images/VitaminBottle.jpg" />
-            <p class="text-sm sm:text-lg pt-4 pb-1">VitaminBottle</p>
+            <p class="pb-1 pt-4 text-sm sm:text-lg">VitaminBottle</p>
             <span class="mr-3 text-sm">Liquid</span
             ><span class="mr-3 text-sm">CSS</span>
             <span class="text-sm">JAVASCRIPT</span>
             <div class="py-4">
               <button
-                class="view-project mr-3 underline uppercase decoration-metalgreen decoration-2 underline-offset-[15px] hover:text-metalgreen"
+                class="view-project mr-3 uppercase underline decoration-metalgreen decoration-2 underline-offset-[15px] hover:text-metalgreen"
               >
                 <a href="https://www.vitaminbottle.de" target="_blank">
                   View project
@@ -1723,13 +1723,13 @@
           </div>
           <div class="project-6 text-lg uppercase">
             <img src="./assets/images/Outerpreneur.jpg" />
-            <p class="text-sm sm:text-lg pt-4 pb-1">OUTERPRENEUR</p>
+            <p class="pb-1 pt-4 text-sm sm:text-lg">OUTERPRENEUR</p>
             <span class="mr-3 text-sm">Liquid</span
             ><span class="mr-3 text-sm">TAILWIND CSS</span>
             <span class="text-sm">JAVASCRIPT</span>
             <div class="py-4">
               <button
-                class="view-project mr-3 underline uppercase decoration-metalgreen decoration-2 underline-offset-[15px] hover:text-metalgreen"
+                class="view-project mr-3 uppercase underline decoration-metalgreen decoration-2 underline-offset-[15px] hover:text-metalgreen"
               >
                 <a href="https://www.superbra.nl" target="_blank">
                   View project
@@ -1745,13 +1745,13 @@
           </div>
           <div class="project-6 text-lg uppercase">
             <img src="./assets/images/Centroartesano.jpg" />
-            <p class="text-sm sm:text-lg pt-4 pb-1">CENTROARTESANO</p>
+            <p class="pb-1 pt-4 text-sm sm:text-lg">CENTROARTESANO</p>
             <span class="mr-3 text-sm">Liquid</span
             ><span class="mr-3 text-sm">CSS</span>
             <span class="text-sm">JAVASCRIPT</span>
             <div class="py-4">
               <button
-                class="view-project mr-3 underline uppercase decoration-metalgreen decoration-2 underline-offset-[15px] hover:text-metalgreen"
+                class="view-project mr-3 uppercase underline decoration-metalgreen decoration-2 underline-offset-[15px] hover:text-metalgreen"
               >
                 <a href="https://www.centroartesano.es" target="_blank">
                   View project
@@ -1764,21 +1764,21 @@
                 View code
               </a>
             </div>
+          </div>
         </div>
       </div>
     </section>
-
     <section
       id="contact"
-      class="mt-20 bg-gray-100 dark:bg-footerbg flex justify-center py-20 bg-ringspatternBlack dark:bg-ringspattern bg-no-repeat bg-center md:bg-left"
+      class="mt-20 flex justify-center bg-gray-100 bg-ringspatternBlack bg-center bg-no-repeat py-20 dark:bg-footerbg dark:bg-ringspattern md:bg-left"
     >
       <div
         id="contact-inner"
-        class="max-w-xs w-full grid grid-cols-1 gap-5 m-auto sm:max-w-xl xl:max-w-7xl lg:grid-cols-2"
+        class="m-auto grid w-full max-w-xs grid-cols-1 gap-5 sm:max-w-xl lg:grid-cols-2 xl:max-w-7xl"
       >
         <div class="text-center md:text-left">
-          <h1 class="text-2xl my-4 md:text-5xl">Contact</h1>
-          <p class="text-sm md:text-lg md:max-w-md">
+          <h1 class="my-4 text-2xl md:text-5xl">Contact</h1>
+          <p class="text-sm md:max-w-md md:text-lg">
             I would love to hear about your project and how I could help. Please
             fill in the form, and I’ll get back to you as soon as possible.
           </p>
@@ -1794,7 +1794,7 @@
             id="name"
             name="name"
             placeholder="NAME"
-            class="p-2 border-b border-black dark:border-white dark:bg-footerbg placeholder:text-black bg-gray-100 dark:placeholder:text-metalgray placeholder:pl-2 text-sm uppercase"
+            class="border-b border-black bg-gray-100 p-2 text-sm uppercase placeholder:pl-2 placeholder:text-black dark:border-white dark:bg-footerbg dark:placeholder:text-metalgray"
             required
           />
 
@@ -1804,11 +1804,11 @@
             name="email"
             type="email"
             placeholder="EMAIL"
-            class="p-2 border-b border-black dark:border-white placeholder:text-black bg-gray-100 dark:placeholder:text-metalgray dark:bg-footerbg placeholder:pl-2 text-sm uppercase"
+            class="border-b border-black bg-gray-100 p-2 text-sm uppercase placeholder:pl-2 placeholder:text-black dark:border-white dark:bg-footerbg dark:placeholder:text-metalgray"
             required
           />
 
-          <p class="error-message hidden text-right text-red-500 mt-0 text-sm">
+          <p class="error-message mt-0 hidden text-right text-sm text-red-500">
             Sorry, invalid format here
           </p>
 
@@ -1817,13 +1817,13 @@
             id="message"
             name="message"
             placeholder="MESSAGE"
-            class="p-2 border-b border-black dark:border-white bg-gray-100 dark:bg-footerbg placeholder:pl-2 text-sm placeholder:text-black dark:placeholder:text-metalgray h-[100px] uppercase"
+            class="h-[100px] border-b border-black bg-gray-100 p-2 text-sm uppercase placeholder:pl-2 placeholder:text-black dark:border-white dark:bg-footerbg dark:placeholder:text-metalgray"
             required
           ></textarea>
 
           <button
             type="submit"
-            class="submit-button text-right underline uppercase decoration-metalgreen decoration-2 underline-offset-[15px] mt-4 text-sm mb-10 hover:text-metalgreen animate-pulse"
+            class="submit-button mb-10 mt-4 animate-pulse text-right text-sm uppercase underline decoration-metalgreen decoration-2 underline-offset-[15px] hover:text-metalgreen"
           >
             Send message
           </button>
@@ -1831,16 +1831,17 @@
       </div>
       <hr />
     </section>
-    <footer class="px-6 pt-6 pb-10 flex justify-center">
+
+    <footer class="flex justify-center px-6 pb-10 pt-6">
       <div
         id="inner-footer"
-        class="flex flex-col w-full text-center py-4 gap-4 sm:flex-row sm:justify-between lg:max-w-7xl m-auto"
+        class="m-auto flex w-full flex-col gap-4 py-4 text-center sm:flex-row sm:justify-between lg:max-w-7xl"
       >
         <h3>{ alektysklind.dev }</h3>
-        <div id="footer-social-icons" class="flex m-auto sm:m-0 gap-4">
+        <div id="footer-social-icons" class="m-auto flex gap-4 sm:m-0">
           <a href="https://github.com/outerpreneur" target="_blank">
             <svg
-              class="text-black dark:text-white cursor-pointer hover:text-metalgreen dark:hover:text-metalgreen"
+              class="cursor-pointer text-black hover:text-metalgreen dark:text-white dark:hover:text-metalgreen"
               xmlns="http://www.w3.org/2000/svg"
               width="25"
               height="24"
@@ -1854,7 +1855,7 @@
           </a>
           <a href="https://github.com/outerpreneur" target="_blank">
             <svg
-              class="text-black dark:text-white cursor-pointer hover:text-metalgreen dark:hover:text-metalgreen"
+              class="cursor-pointer text-black hover:text-metalgreen dark:text-white dark:hover:text-metalgreen"
               xmlns="http://www.w3.org/2000/svg"
               width="26"
               height="23"
@@ -1867,7 +1868,7 @@
           </a>
           <a href="https://github.com/outerpreneur" target="_blank">
             <svg
-              class="text-black dark:text-white cursor-pointer hover:text-metalgreen dark:hover:text-metalgreen"
+              class="cursor-pointer text-black hover:text-metalgreen dark:text-white dark:hover:text-metalgreen"
               xmlns="http://www.w3.org/2000/svg"
               width="25"
               height="24"
@@ -1881,7 +1882,7 @@
           </a>
           <a href="https://github.com/outerpreneur" target="_blank">
             <svg
-              class="text-black dark:text-white cursor-pointer hover:text-metalgreen dark:hover:text-metalgreen"
+              class="cursor-pointer text-black hover:text-metalgreen dark:text-white dark:hover:text-metalgreen"
               xmlns="http://www.w3.org/2000/svg"
               width="24"
               height="20"
@@ -1897,34 +1898,34 @@
     </footer>
     <dialog
       id="mobile-menu"
-      class="fixed bg-white dark:bg-midnight text-black dark:text-white z-10 h-[300px] w-[90%] top-10"
+      class="fixed top-10 z-10 h-[300px] w-[90%] bg-white text-black dark:bg-midnight dark:text-white"
     >
-      <nav class="flex justify-center items-center h-full">
-        <ul class="flex gap-8 items-center text-lg flex-col">
+      <nav class="flex h-full items-center justify-center">
+        <ul class="flex flex-col items-center gap-8 text-lg">
           <li
-            class="underline decoration-metalgreen underline-offset-8 decoration-2 cursor-pointer hover:font-bold hover:decoration-4 hover:animate-pulse"
+            class="cursor-pointer underline decoration-metalgreen decoration-2 underline-offset-8 hover:animate-pulse hover:font-bold hover:decoration-4"
           >
             <a href="#intro">intro</a>
           </li>
           <li
-            class="underline decoration-metalgreen underline-offset-8 decoration-2 cursor-pointer hover:font-bold hover:decoration-4 hover:animate-pulse"
+            class="cursor-pointer underline decoration-metalgreen decoration-2 underline-offset-8 hover:animate-pulse hover:font-bold hover:decoration-4"
           >
             <a href="#skills">Skills</a>
           </li>
           <li
-            class="underline decoration-metalgreen underline-offset-8 decoration-2 cursor-pointer hover:font-bold hover:decoration-4 hover:animate-pulse"
+            class="cursor-pointer underline decoration-metalgreen decoration-2 underline-offset-8 hover:animate-pulse hover:font-bold hover:decoration-4"
           >
             <a href="#projects">Projects</a>
           </li>
           <li
-            class="underline decoration-metalgreen underline-offset-8 decoration-2 cursor-pointer hover:font-bold hover:decoration-4 hover:animate-pulse"
+            class="cursor-pointer underline decoration-metalgreen decoration-2 underline-offset-8 hover:animate-pulse hover:font-bold hover:decoration-4"
           >
             <a href="#contact">Contact</a>
           </li>
         </ul>
         <svg
           id="close-button"
-          class="absolute top-2 right-2 text-black dark:text-white"
+          class="absolute right-2 top-2 text-black dark:text-white"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 50 50"
           width="25px"
