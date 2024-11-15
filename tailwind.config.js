@@ -21,6 +21,42 @@ module.exports = {
       ringspattern: "url('./assets/images/pattern-rings.svg')",
       ringspatternBlack: "url('./assets/images/pattern-rings-black.svg')",
     },
+    content: {
+      empty: "''",
+    },
+    variants: {
+      extend: {
+        content: ["before", "after"],
+        backgroundColor: ["dark", "after"],
+        gradientColorStops: ["dark", "after"],
+        opacity: ["dark", "after"],
+      },
+    },
   },
-  plugins: [],
+  plugins: [
+    function ({ addUtilities }) {
+      addUtilities(
+        {
+          ".after\\:content-empty": {
+            content: '""',
+          },
+          ".after\\:bg-gradient-to-r": {
+            backgroundImage:
+              "linear-gradient(to right, var(--tw-gradient-stops))",
+          },
+          ".after\\:from-white": {
+            "--tw-gradient-from": "#ffffff",
+            "--tw-gradient-stops":
+              "var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0))",
+          },
+          ".dark .after\\:from-black": {
+            "--tw-gradient-from": "#000000",
+            "--tw-gradient-stops":
+              "var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0))",
+          },
+        },
+        ["after", "dark"],
+      );
+    },
+  ],
 };
