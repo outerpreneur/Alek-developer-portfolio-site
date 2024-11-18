@@ -679,6 +679,10 @@ video {
   right: 0.5rem;
 }
 
+.right-\[10\%\] {
+  right: 10%;
+}
+
 .start-1 {
   inset-inline-start: 0.25rem;
 }
@@ -2974,6 +2978,11 @@ video {
   --tw-gradient-from-position: 40%;
 }
 
+.after\:from-50\%::after {
+  content: var(--tw-content);
+  --tw-gradient-from-position: 50%;
+}
+
 .after\:to-transparent::after {
   content: var(--tw-content);
   --tw-gradient-to: transparent var(--tw-gradient-to-position);
@@ -3037,7 +3046,7 @@ video {
 
 .dark\:bg-midnight:is(.dark *) {
   --tw-bg-opacity: 1;
-  background-color: rgb(21 21 21 / var(--tw-bg-opacity));
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
 .dark\:bg-white:is(.dark *) {

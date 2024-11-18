@@ -6,7 +6,7 @@ module.exports = {
     extend: {
       colors: {
         metalgreen: "#4EE1A0",
-        midnight: "#151515",
+        midnight: "#000",
         footerbg: "#242424",
         metalgray: "#d9d9d9",
         orangemetal: "#FFA500",
