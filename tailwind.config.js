@@ -20,6 +20,10 @@ module.exports = {
       circlepattern: "url('./assets/images/pattern-circle.svg')",
       ringspattern: "url('./assets/images/pattern-rings.svg')",
       ringspatternBlack: "url('./assets/images/pattern-rings-black.svg')",
+      "gold-gradient": "linear-gradient(to right, #FFD700, #FF8C00)",
+    },
+    textColor: {
+      transparent: "transparent",
     },
     content: {
       empty: "''",
@@ -53,6 +57,12 @@ module.exports = {
             "--tw-gradient-from": "#000000",
             "--tw-gradient-stops":
               "var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0))",
+          },
+          ".text-gold-gradient": {
+            backgroundImage: "linear-gradient(to right, #FFD700, #FF8C00)",
+            "-webkit-background-clip": "text",
+            "background-clip": "text",
+            color: "transparent",
           },
         },
         ["after", "dark"],
