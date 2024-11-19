@@ -7,8 +7,14 @@
       href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
     <link href="./output.css" rel="stylesheet" />
-    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <link rel="stylesheet" href="style.css" />
 
     <link
       rel="icon"
@@ -35,10 +41,10 @@
     <title>Alek Tysklind developer</title>
   </head>
   <body
-    class="relative bg-white font-spacegrotesk dark:bg-midnight dark:text-white"
+    class="relative bg-white font-spacegrotesk text-black dark:bg-midnight dark:text-white"
   >
     <header
-      class="fixed flex w-full items-center justify-center bg-white transition-opacity duration-1000 ease-in-out dark:bg-midnight"
+      class="fixed z-50 flex w-full items-center justify-center bg-white transition-opacity duration-1000 ease-in-out dark:bg-midnight"
     >
       <div
         id="inner-header"
@@ -50,7 +56,7 @@
         <div id="toggle-block" class="flex items-center gap-2">
           <svg
             id="light-icon"
-            class="cursor-pointer text-black dark:text-white sm:block"
+            class="cursor-pointer dark:text-white sm:block"
             xmlns="http://www.w3.org/2000/svg"
             width="24"
             height="24"
@@ -1562,7 +1568,7 @@
       </div>
     </section>
 
-    <section id="projects" class="flex justify-center">
+    <!-- <section id="projects" class="flex justify-center">
       <div
         id="inner-projects"
         class="flex max-w-xs flex-col justify-center py-6 align-middle sm:max-w-xl xl:max-w-7xl"
@@ -1768,11 +1774,144 @@
           </div>
         </div>
       </div>
+    </section> -->
+    <!-- slider -->
+
+    <section class="slider relative h-screen">
+      <!-- list Items -->
+      <div class="list font-oswald">
+        <div
+          class="item active after:bg-gradient-to-l absolute inset-0 h-full w-full overflow-hidden opacity-0 after:absolute after:bottom-0 after:left-0 after:h-full after:w-full after:from-white after:from-40% after:to-transparent after:content-empty dark:after:from-black"
+        >
+          <img src="image/superbra.jpg" class="h-full w-full object-cover" />
+          <div
+            class="content absolute right-[10%] top-[20%] z-10 w-[500px] max-w-[80%]"
+          >
+            <p>POS / THEME DESIGN / SUPPORT</p>
+            <h2 class="text-[100px] uppercase text-pink-500">SuperBra</h2>
+            <p>
+              a three-store bra boutique in the Netherlands, offering expert
+              fittings and quality lingerie in Amsterdam, Utrecht, and Rotterdam
+              for every body type.
+            </p>
+            <div class="mt-2">
+              <button
+                class="view-project mr-3 uppercase underline decoration-metalgreen decoration-2 underline-offset-[15px] hover:text-metalgreen"
+              >
+                <a href="https://www.superbra.nl" target="_blank">
+                  View Store
+                </a>
+              </button>
+              <a href="" target="_blank">View code</a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="item active after:bg-gradient-to-t absolute inset-0 h-full w-full overflow-hidden opacity-0 after:absolute after:bottom-0 after:left-0 after:h-full after:w-full after:from-white after:from-50% after:to-transparent after:content-empty dark:after:from-black"
+        >
+          <img src="image/weathertech.jpg" class="h-full w-full object-cover" />
+          <div
+            class="content absolute left-[10%] top-[20%] z-10 w-[500px] max-w-[80%]"
+          >
+            <p>THEME DESIGN / SEO / CONSULTING</p>
+            <h2 class="text-[100px] uppercase text-[#194ba0]">WeatherTech</h2>
+            <p>
+              WeatherTech, a $100M automotive brand from North America, delivers
+              premium vehicle accessories and is now expanding into the Swiss
+              and European markets with high-quality products.
+            </p>
+          </div>
+        </div>
+        <div
+          class="item active after:bg-gradient-to-t absolute inset-0 h-full w-full overflow-hidden opacity-0 after:absolute after:bottom-0 after:left-0 after:h-full after:w-full after:from-white after:from-40% after:to-transparent after:content-empty dark:after:from-black"
+        >
+          <img
+            src="image/st-patrick-2.webp"
+            class="h-full w-full object-cover"
+          />
+          <div
+            class="content absolute left-[10%] top-[20%] z-10 w-[500px] max-w-[80%]"
+          >
+            <p>THEME DESIGN</p>
+            <h2 class="text-[100px] uppercase text-[#ff723f]">August Berg</h2>
+            <p>
+              August Berg, a Singaporean-Danish watch brand founded in 2019,
+              combines style with purpose, donating profits to education in
+              Africa and Asia. Expanding into Europe and Japan.
+            </p>
+          </div>
+        </div>
+        <div
+          class="item active after:bg-gradient-to-r absolute inset-0 h-full w-full overflow-hidden opacity-0 after:absolute after:bottom-0 after:left-0 after:h-full after:w-full after:from-white after:from-20% after:to-transparent after:content-empty dark:after:from-black"
+        >
+          <img
+            src="image/marilou-shop.jpg"
+            class="h-full w-full object-cover"
+          />
+          <div
+            class="content absolute left-[10%] top-[20%] z-10 w-[500px] max-w-[80%]"
+          >
+            <p>Design</p>
+            <h2 class="text-[100px] uppercase text-[#899631]">MarilouShop</h2>
+            <p>
+              Mariloushop, launched in Costa Rica in 2020, thrives
+              internationally with eco-chic organic forniture sourced from
+              Indonesia, Central America, and Asia, blending beach style with
+              sustainability.
+            </p>
+          </div>
+        </div>
+        <div
+          class="item active after:bg-gradient-to-t absolute inset-0 h-full w-full overflow-hidden opacity-0 after:absolute after:bottom-0 after:left-0 after:h-full after:w-full after:from-white after:from-40% after:to-transparent after:content-empty dark:after:from-black"
+        >
+          <img src="image/fullord.jpg" class="h-full w-full object-cover" />
+          <div
+            class="content absolute left-[10%] top-[20%] z-10 w-[500px] max-w-[80%]"
+          >
+            <p>SUPPORT / CONSULTING</p>
+            <h2 class="text-gold-gradient text-[100px] uppercase">Fullord</h2>
+            <p>
+              Fullord, a luxury jewelry store based in Geneva, Switzerland,
+              offers exquisite high-value pieces, catering to sophisticated
+              clientele across multiple markets and continents.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- button arrows -->
+      <div class="arrows">
+        <button id="prev"><</button>
+        <button id="next">></button>
+      </div>
+      <!-- thumbnail -->
+      <div class="thumbnail font-bold text-white">
+        <div class="item active">
+          <img src="./image/superebra-thumbnail.jpg" />
+          <div class="content">SuperBra</div>
+        </div>
+        <div class="item">
+          <img src="./image/weathertech-thumbnail.jpg" />
+          <div class="content">WeatherTech</div>
+        </div>
+        <div class="item">
+          <img src="./image/august-berg-thumbnail.jpg" />
+          <div class="content">August Berg</div>
+        </div>
+        <div class="item">
+          <img src="./image/marilou-thumbnail.jpg" />
+          <div class="content">Marilou Shop</div>
+        </div>
+        <div class="item">
+          <img src="./image/fullord-thumnail.jpg" />
+          <div class="content">Fullord</div>
+        </div>
+      </div>
     </section>
+    <!-- end slider -->
 
     <section
       id="contact"
-      class="mt-20 flex justify-center bg-gray-100 bg-ringspatternBlack bg-center bg-no-repeat py-20 dark:bg-footerbg dark:bg-ringspattern md:bg-left"
+      class="flex justify-center bg-white bg-ringspatternBlack bg-center bg-no-repeat py-20 dark:bg-black dark:bg-ringspattern md:bg-left"
     >
       <div
         id="contact-inner"
@@ -1819,7 +1958,7 @@
             id="message"
             name="message"
             placeholder="MESSAGE"
-            class="h-[100px] border-b border-black bg-gray-100 p-2 text-sm uppercase placeholder:pl-2 placeholder:text-black dark:border-white dark:bg-footerbg dark:placeholder:text-metalgray"
+            class="dark:placeholder:tex-white h-[100px] border-b border-black bg-gray-100 p-2 text-sm uppercase placeholder:pl-2 placeholder:text-black dark:border-white dark:bg-footerbg dark:placeholder:text-metalgray"
             required
           ></textarea>
 
